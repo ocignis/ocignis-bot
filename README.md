@@ -32,9 +32,9 @@ Visit [localhost:4000](http://localhost:4000/)
 
 ## Stack:
 
-- [Prisma v4](https://www.prisma.io/) ORM
 - [TypeScript v4](https://github.com/microsoft/TypeScript) codebase with [Strict Configuration](https://typescript-eslint.io/docs/linting/configs#strict)
 - [tRPC v10](https://trpc.io/) API for client integration.
+- [Prisma v4](https://www.prisma.io/) ORM
 - Unit and integration tests with [Jest](https://github.com/facebook/jest)
 - Linting with [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/) code formatter
