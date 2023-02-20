@@ -61,23 +61,3 @@ jobs:
 
       - name: Test 🧪
         run: npm run test
-
-  # publish-ocignis-shared:
-  #   name: Publish ocignis-shared 📦
-  #   # needs: [build, lint, tsc, test]
-  #   runs-on: ubuntu-latest
-
-  #   steps:
-  #     - name: Checkout 🛎️
-  #       uses: actions/checkout@v3
-
-  #     - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
-  #       uses: ./.github/workflows/actions/setup_node-cache_dep-install_dep
-
-  #     - name: Build ocignis-shared 🏗️
-  #       run: npm run build-ocignis-shared
-
-  #     - name: Publish 📦
-  #       run: npm publish
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
