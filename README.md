@@ -44,7 +44,7 @@ Tech Stack:
 
 <!-- Badges -->
 
-[ci-badge]: https://github.com/ocignis/ocignis-bot-and-api/actions/workflows/CI.yml/badge.svg
-[ci-url]: https://github.com/ocignis/ocignis-bot-and-api/actions/workflows/CI.yml
-[ci-deployment-badge]: https://github.com/ocignis/ocignis-bot-and-api/actions/workflows/CI-Deployment.yml/badge.svg
-[ci-deployment-url]: https://github.com/ocignis/ocignis-bot-and-api/actions/workflows/CI-Deployment.yml
+[ci-badge]: https://github.com/ocignis/ocignis-bot/actions/workflows/CI.yml/badge.svg
+[ci-url]: https://github.com/ocignis/ocignis-bot/actions/workflows/CI.yml
+[ci-deployment-badge]: https://github.com/ocignis/ocignis-bot/actions/workflows/CI-Deployment.yml/badge.svg
+[ci-deployment-url]: https://github.com/ocignis/ocignis-bot/actions/workflows/CI-Deployment.yml
