@@ -3,7 +3,6 @@ coverage
 dist
 build
 compiled
-/logs/*
 
 
 .DS_Store
@@ -14,14 +13,16 @@ compiled
 
 npm-debug.log*
 
+database/*
+!database/.gitkeep
 
 envs/*
 !envs/.gitkeep 
 
+logs/*
+!logs/.gitkeep 
 
 
-database/*
-!database/.gitkeep
 
 binance-datasets/datasets/spot-monthly-trades/*
 !binance-datasets/datasets/spot-monthly-trades/.gitkeep
