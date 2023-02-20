@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db_ocignis:
+    container_name: 'db_ocignis'
+    image: 'postgres:14.6-alpine'
+    restart: always
+    env_file:
+      - envs/dev.env
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./database/db_ocignis:/var/lib/postgresql/data/
+
+  ocignis_bot:
+    container_name: 'ocignis_bot'
+    build:
+      context: .
+      # Stop when this stage ends in Dockerfile
+      target: builder
+    restart: always
+    command: npm run docker-dev
+    env_file:
+      - envs/dev.env
+    ports:
+      - '4000:4000'
+    depends_on:
+      - db_ocignis
+    links:
+      - db_ocignis
+    volumes:
+      - ./:/app/
+      - /app/node_modules
