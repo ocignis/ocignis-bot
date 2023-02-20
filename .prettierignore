@@ -1,0 +1,7 @@
+VersionInfo.ts
+
+coverage
+dist
+compiled
+build
+logs/*.json
