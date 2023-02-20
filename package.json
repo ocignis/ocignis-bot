@@ -30,8 +30,8 @@
     "db-migration-run-dev": "ENV=dev-seed-backtest.env npm run db-migration-run",
     "db-migration-run-prod": "ENV=prod npm run db-migration-run",
     "// Docker": "",
-    "dev-inside-docker": "nodemon -r tsconfig-paths/register ./src/index.ts",
-    "start-inside-docker": "NODE_PATH=./dist node dist/index.js",
+    "docker-dev": "nodemon -r tsconfig-paths/register ./src/index.ts",
+    "docker-prod": "NODE_PATH=./dist node dist/index.js",
     "docker-compose-run": "docker compose up",
     "docker-compose-run-changed-deps": "docker compose down && docker compose up --build"
   },
