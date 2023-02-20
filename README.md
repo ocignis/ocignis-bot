@@ -42,6 +42,26 @@ Visit [localhost:4000](http://localhost:4000/)
 - Commit messages must meet [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) format.  
   After staging changes just run `npm run commit` and get instant feedback on your commit message formatting and be prompted for required fields by [Commitizen](https://github.com/commitizen/cz-cli)
 
+## Commands
+
+| Command              | Description                                                                  |
+| -------------------- | ---------------------------------------------------------------------------- |
+| prepare              | Setup git hooks with Husky (executes on npm install)                         |
+| build-ocignis-shared | Build and export tRPC types                                                  |
+| dev                  | Start bot in docker container                                                |
+| dev-changed-deps     | Build and start bot image                                                    |
+| build                | Build bot                                                                    |
+| lint                 | Lint whole repository                                                        |
+| lint-fix             | Run lint fix                                                                 |
+| lint-staged-husky    | Run prettier and lint on staged files                                        |
+| tsc                  | Run TypeScript compiler                                                      |
+| test                 | Run tests                                                                    |
+| test-watch           | Run tests in watch mode                                                      |
+| format-lint          | Lint formatting with Prettier                                                |
+| format-fix           | Fix formatting with Prettier                                                 |
+| commit               | Run Commitizen on staged file                                                |
+| clean                | Remove installed, generated and cached folders (node_modules, coverage etc.) |
+
 <!-- Badges -->
 
 [ci-badge]: https://github.com/ocignis/ocignis-bot/actions/workflows/CI.yml/badge.svg
