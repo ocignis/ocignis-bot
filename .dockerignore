@@ -1,0 +1,8 @@
+.github
+.husky
+binance-datasets
+database
+dist
+envs
+logs
+node_modules
