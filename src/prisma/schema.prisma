@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BotInstance {
+  name        String @unique
+  symbolPair  String
+  botInstance Json
+}
+
+// Backtest
+model BacktestBotBacktestInstance {
+  name                String @unique
+  symbolPair          String
+  botBacktestInstance Json
+}
+
+// Historical data
+model BacktestHistoricTrade {
+  id         String @id @default(uuid())
+  symbolPair String
+  time       BigInt
+  price      String
+  quantity   String
+
+  @@index([symbolPair, time])
+}
+
+model BacktestHistoricTradeImportedFileData {
+  name           String   @unique
+  processingTime String
+  createdAt      DateTime @default(now())
+}
