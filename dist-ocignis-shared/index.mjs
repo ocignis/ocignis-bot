@@ -52,7 +52,9 @@ import { z as z4 } from 'zod';
 // src/bot/strategies/strategy_CustomStrategy/types.ts
 import { z } from 'zod';
 var Strategy_CustomStrategy_ConfigSchema = z.object({
-  isShortingEnabled: z.boolean().default(false),
+  customStrategyParam: z.string(),
+  periodShort: z.number().positive(),
+  periodLong: z.number().positive(),
 });
 
 // src/bot/strategies/strategy_SMA/types.ts

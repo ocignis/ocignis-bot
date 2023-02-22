@@ -222,7 +222,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                         };
                         strategyName: 'CustomStrategy';
                         strategySpecificConfig: {
-                          isShortingEnabled?: boolean | undefined;
+                          periodShort: number;
+                          periodLong: number;
+                          customStrategyParam: string;
                         };
                       };
                 };
@@ -248,7 +250,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                         };
                         strategyName: 'CustomStrategy';
                         strategySpecificConfig: {
-                          isShortingEnabled: boolean;
+                          periodShort: number;
+                          periodLong: number;
+                          customStrategyParam: string;
                         };
                       };
                 };
@@ -487,7 +491,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                       };
                       strategyName: 'CustomStrategy';
                       strategySpecificConfig: {
-                        isShortingEnabled?: boolean | undefined;
+                        periodShort: number;
+                        periodLong: number;
+                        customStrategyParam: string;
                       };
                     }
                 ) & {
@@ -515,7 +521,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                       };
                       strategyName: 'CustomStrategy';
                       strategySpecificConfig: {
-                        isShortingEnabled: boolean;
+                        periodShort: number;
+                        periodLong: number;
+                        customStrategyParam: string;
                       };
                     }
                 ) & {
@@ -610,7 +618,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                         };
                         strategyName: 'CustomStrategy';
                         strategySpecificConfig: {
-                          isShortingEnabled?: boolean | undefined;
+                          periodShort: number;
+                          periodLong: number;
+                          customStrategyParam: string;
                         };
                       }
                   ) & {
@@ -645,7 +655,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                         };
                         strategyName: 'CustomStrategy';
                         strategySpecificConfig: {
-                          isShortingEnabled: boolean;
+                          periodShort: number;
+                          periodLong: number;
+                          customStrategyParam: string;
                         };
                       }
                   ) & {
@@ -863,7 +875,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                       };
                       strategyName: 'CustomStrategy';
                       strategySpecificConfig: {
-                        isShortingEnabled?: boolean | undefined;
+                        periodShort: number;
+                        periodLong: number;
+                        customStrategyParam: string;
                       };
                     }
                 ) & {
@@ -898,7 +912,9 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                       };
                       strategyName: 'CustomStrategy';
                       strategySpecificConfig: {
-                        isShortingEnabled: boolean;
+                        periodShort: number;
+                        periodLong: number;
+                        customStrategyParam: string;
                       };
                     }
                 ) & {
@@ -1167,15 +1183,21 @@ declare const BotConfigSchema: z.ZodDiscriminatedUnion<
         >;
         strategySpecificConfig: z.ZodObject<
           {
-            isShortingEnabled: z.ZodDefault<z.ZodBoolean>;
+            customStrategyParam: z.ZodString;
+            periodShort: z.ZodNumber;
+            periodLong: z.ZodNumber;
           },
           'strip',
           z.ZodTypeAny,
           {
-            isShortingEnabled: boolean;
+            periodShort: number;
+            periodLong: number;
+            customStrategyParam: string;
           },
           {
-            isShortingEnabled?: boolean | undefined;
+            periodShort: number;
+            periodLong: number;
+            customStrategyParam: string;
           }
         >;
       },
@@ -1189,7 +1211,9 @@ declare const BotConfigSchema: z.ZodDiscriminatedUnion<
         };
         strategyName: 'CustomStrategy';
         strategySpecificConfig: {
-          isShortingEnabled: boolean;
+          periodShort: number;
+          periodLong: number;
+          customStrategyParam: string;
         };
       },
       {
@@ -1200,7 +1224,9 @@ declare const BotConfigSchema: z.ZodDiscriminatedUnion<
         };
         strategyName: 'CustomStrategy';
         strategySpecificConfig: {
-          isShortingEnabled?: boolean | undefined;
+          periodShort: number;
+          periodLong: number;
+          customStrategyParam: string;
         };
       }
     >,
@@ -1300,15 +1326,21 @@ declare const BotInstanceSchema: z.ZodIntersection<
           >;
           strategySpecificConfig: z.ZodObject<
             {
-              isShortingEnabled: z.ZodDefault<z.ZodBoolean>;
+              customStrategyParam: z.ZodString;
+              periodShort: z.ZodNumber;
+              periodLong: z.ZodNumber;
             },
             'strip',
             z.ZodTypeAny,
             {
-              isShortingEnabled: boolean;
+              periodShort: number;
+              periodLong: number;
+              customStrategyParam: string;
             },
             {
-              isShortingEnabled?: boolean | undefined;
+              periodShort: number;
+              periodLong: number;
+              customStrategyParam: string;
             }
           >;
         },
@@ -1322,7 +1354,9 @@ declare const BotInstanceSchema: z.ZodIntersection<
           };
           strategyName: 'CustomStrategy';
           strategySpecificConfig: {
-            isShortingEnabled: boolean;
+            periodShort: number;
+            periodLong: number;
+            customStrategyParam: string;
           };
         },
         {
@@ -1333,7 +1367,9 @@ declare const BotInstanceSchema: z.ZodIntersection<
           };
           strategyName: 'CustomStrategy';
           strategySpecificConfig: {
-            isShortingEnabled?: boolean | undefined;
+            periodShort: number;
+            periodLong: number;
+            customStrategyParam: string;
           };
         }
       >,
@@ -1451,15 +1487,21 @@ declare const BotBacktestConfigSchema: z.ZodIntersection<
           >;
           strategySpecificConfig: z.ZodObject<
             {
-              isShortingEnabled: z.ZodDefault<z.ZodBoolean>;
+              customStrategyParam: z.ZodString;
+              periodShort: z.ZodNumber;
+              periodLong: z.ZodNumber;
             },
             'strip',
             z.ZodTypeAny,
             {
-              isShortingEnabled: boolean;
+              periodShort: number;
+              periodLong: number;
+              customStrategyParam: string;
             },
             {
-              isShortingEnabled?: boolean | undefined;
+              periodShort: number;
+              periodLong: number;
+              customStrategyParam: string;
             }
           >;
         },
@@ -1473,7 +1515,9 @@ declare const BotBacktestConfigSchema: z.ZodIntersection<
           };
           strategyName: 'CustomStrategy';
           strategySpecificConfig: {
-            isShortingEnabled: boolean;
+            periodShort: number;
+            periodLong: number;
+            customStrategyParam: string;
           };
         },
         {
@@ -1484,7 +1528,9 @@ declare const BotBacktestConfigSchema: z.ZodIntersection<
           };
           strategyName: 'CustomStrategy';
           strategySpecificConfig: {
-            isShortingEnabled?: boolean | undefined;
+            periodShort: number;
+            periodLong: number;
+            customStrategyParam: string;
           };
         }
       >,
@@ -1630,15 +1676,21 @@ declare const BotBacktestInstanceSchema: z.ZodIntersection<
             >;
             strategySpecificConfig: z.ZodObject<
               {
-                isShortingEnabled: z.ZodDefault<z.ZodBoolean>;
+                customStrategyParam: z.ZodString;
+                periodShort: z.ZodNumber;
+                periodLong: z.ZodNumber;
               },
               'strip',
               z.ZodTypeAny,
               {
-                isShortingEnabled: boolean;
+                periodShort: number;
+                periodLong: number;
+                customStrategyParam: string;
               },
               {
-                isShortingEnabled?: boolean | undefined;
+                periodShort: number;
+                periodLong: number;
+                customStrategyParam: string;
               }
             >;
           },
@@ -1652,7 +1704,9 @@ declare const BotBacktestInstanceSchema: z.ZodIntersection<
             };
             strategyName: 'CustomStrategy';
             strategySpecificConfig: {
-              isShortingEnabled: boolean;
+              periodShort: number;
+              periodLong: number;
+              customStrategyParam: string;
             };
           },
           {
@@ -1663,7 +1717,9 @@ declare const BotBacktestInstanceSchema: z.ZodIntersection<
             };
             strategyName: 'CustomStrategy';
             strategySpecificConfig: {
-              isShortingEnabled?: boolean | undefined;
+              periodShort: number;
+              periodLong: number;
+              customStrategyParam: string;
             };
           }
         >,

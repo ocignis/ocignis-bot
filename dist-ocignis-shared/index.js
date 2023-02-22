@@ -88,7 +88,9 @@ var import_zod4 = require('zod');
 // src/bot/strategies/strategy_CustomStrategy/types.ts
 var import_zod = require('zod');
 var Strategy_CustomStrategy_ConfigSchema = import_zod.z.object({
-  isShortingEnabled: import_zod.z.boolean().default(false),
+  customStrategyParam: import_zod.z.string(),
+  periodShort: import_zod.z.number().positive(),
+  periodLong: import_zod.z.number().positive(),
 });
 
 // src/bot/strategies/strategy_SMA/types.ts
