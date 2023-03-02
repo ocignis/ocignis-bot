@@ -439,7 +439,36 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                 _output_out: typeof _trpc_server.unsetMarker;
                 _meta: object;
               },
-              any
+              ((
+                | {
+                    strategyConfig: {
+                      symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
+                      entryAmountRelative: number;
+                      assetDecimalPlaces: number;
+                    };
+                    strategyName: 'SMA';
+                    strategySpecificConfig: {
+                      periodShort: number;
+                      periodLong: number;
+                    };
+                  }
+                | {
+                    strategyConfig: {
+                      symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
+                      entryAmountRelative: number;
+                      assetDecimalPlaces: number;
+                    };
+                    strategyName: 'CustomStrategy';
+                    strategySpecificConfig: {
+                      periodShort: number;
+                      periodLong: number;
+                      customStrategyParam: string;
+                    };
+                  }
+              ) & {
+                name: string;
+                description: string;
+              })[]
             >;
             upsert: _trpc_server.BuildProcedure<
               'mutation',
@@ -823,7 +852,43 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                 _output_out: typeof _trpc_server.unsetMarker;
                 _meta: object;
               },
-              any
+              (((
+                | {
+                    strategyConfig: {
+                      symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
+                      entryAmountRelative: number;
+                      assetDecimalPlaces: number;
+                    };
+                    strategyName: 'SMA';
+                    strategySpecificConfig: {
+                      periodShort: number;
+                      periodLong: number;
+                    };
+                  }
+                | {
+                    strategyConfig: {
+                      symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
+                      entryAmountRelative: number;
+                      assetDecimalPlaces: number;
+                    };
+                    strategyName: 'CustomStrategy';
+                    strategySpecificConfig: {
+                      periodShort: number;
+                      periodLong: number;
+                      customStrategyParam: string;
+                    };
+                  }
+              ) & {
+                backtestConfig: {
+                  balance_BUSD: number;
+                  startTime: Date;
+                  endTime: Date;
+                  fee: number;
+                };
+              }) & {
+                name: string;
+                description: string;
+              })[]
             >;
             upsert: _trpc_server.BuildProcedure<
               'mutation',
