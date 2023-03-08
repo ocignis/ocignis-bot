@@ -93,7 +93,7 @@
   },
   "engines": {
     "npm": ">=9.5.0",
-    "node": ">=18.14.2"
+    "node": ">=18.15.0"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
