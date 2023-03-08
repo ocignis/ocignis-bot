@@ -74,7 +74,9 @@ export class BotBacktest implements BotBacktestCommands {
           strategyConfig,
           balance_BUSD: backtestConfig.balance_BUSD,
           trades: firstItemsInTradesArray,
-          isShortingEnabled: strategySpecificConfig.isShortingEnabled,
+          periodShort: strategySpecificConfig.periodShort,
+          periodLong: strategySpecificConfig.periodLong,
+          customStrategyParam: strategySpecificConfig.customStrategyParam,
         });
 
         this._botBacktestFsm = {
