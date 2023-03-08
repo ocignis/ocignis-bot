@@ -626,8 +626,8 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                   res: express.Response<any, Record<string, any>>;
                 };
                 _input_in: {
-                  botBacktestConfig: (
-                    | {
+                  botBacktestConfig:
+                    | ({
                         strategyConfig: {
                           symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
                           entryAmountRelative: number;
@@ -638,8 +638,15 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                           periodShort: number;
                           periodLong: number;
                         };
-                      }
-                    | {
+                      } & {
+                        backtestConfig: {
+                          balance_BUSD: number;
+                          startTime: Date;
+                          endTime: Date;
+                          fee: number;
+                        };
+                      })
+                    | ({
                         strategyConfig: {
                           symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
                           entryAmountRelative: number;
@@ -651,20 +658,19 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                           periodLong: number;
                           customStrategyParam: string;
                         };
-                      }
-                  ) & {
-                    backtestConfig: {
-                      balance_BUSD: number;
-                      startTime: Date;
-                      endTime: Date;
-                      fee: number;
-                    };
-                  };
+                      } & {
+                        backtestConfig: {
+                          balance_BUSD: number;
+                          startTime: Date;
+                          endTime: Date;
+                          fee: number;
+                        };
+                      });
                   isIncluded_data_tradesDataset: boolean;
                 };
                 _input_out: {
-                  botBacktestConfig: (
-                    | {
+                  botBacktestConfig:
+                    | ({
                         strategyConfig: {
                           symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
                           entryAmountRelative: number;
@@ -675,8 +681,15 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                           periodShort: number;
                           periodLong: number;
                         };
-                      }
-                    | {
+                      } & {
+                        backtestConfig: {
+                          balance_BUSD: number;
+                          startTime: Date;
+                          endTime: Date;
+                          fee: number;
+                        };
+                      })
+                    | ({
                         strategyConfig: {
                           symbolPair: 'BTCBUSD' | 'AVAXBUSD' | 'MATICBUSD';
                           entryAmountRelative: number;
@@ -688,15 +701,14 @@ declare const appRouter: _trpc_server.CreateRouterInner<
                           periodLong: number;
                           customStrategyParam: string;
                         };
-                      }
-                  ) & {
-                    backtestConfig: {
-                      balance_BUSD: number;
-                      startTime: Date;
-                      endTime: Date;
-                      fee: number;
-                    };
-                  };
+                      } & {
+                        backtestConfig: {
+                          balance_BUSD: number;
+                          startTime: Date;
+                          endTime: Date;
+                          fee: number;
+                        };
+                      });
                   isIncluded_data_tradesDataset: boolean;
                 };
                 _output_in: typeof _trpc_server.unsetMarker;
@@ -1115,20 +1127,20 @@ declare const appRouter: _trpc_server.CreateRouterInner<
               res: express.Response<any, Record<string, any>>;
             };
             _input_in: {
-              logDate?: string | undefined;
               logType: 'error' | 'all';
+              logDate?: string | undefined;
             };
             _input_out: {
-              logDate?: string | undefined;
               logType: 'error' | 'all';
+              logDate?: string | undefined;
             };
             _output_in: typeof _trpc_server.unsetMarker;
             _output_out: typeof _trpc_server.unsetMarker;
           },
           {
             data: {
-              logDate?: string | undefined;
               logType: 'error' | 'all';
+              logDate?: string | undefined;
             };
           }
         >;
