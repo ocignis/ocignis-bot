@@ -3,7 +3,8 @@
 [![CI][ci-badge]][ci-url]
 [![CI-Deployment][ci-deployment-badge]][ci-deployment-url]
 
-Minimal trading bot with API to easily run, stop or schedule trading strategies. Build algorithms in Typescript with focus on best practices and painless developer experience.
+Minimal trading bot with API to easily run, stop or schedule trading strategies.  
+Build algorithms in Typescript with focus on best practices and painless developer experience.
 
 ## Features:
 
