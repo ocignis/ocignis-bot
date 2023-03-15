@@ -3,7 +3,7 @@ version: '3.8'
 services:
   db_ocignis:
     container_name: 'db_ocignis'
-    image: 'postgres:14.6-alpine'
+    image: 'postgres:14.7-alpine'
     restart: always
     env_file:
       - envs/dev.env
