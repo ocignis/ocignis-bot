@@ -1,4 +1,4 @@
-ARG BASE=node:18.14.1-alpine
+ARG BASE=node:18.15.0-alpine
 
 
 ###########################################
