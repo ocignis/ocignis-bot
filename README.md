@@ -36,6 +36,11 @@ Visit [localhost:4000](http://localhost:4000/)
 
 - Running [React App](https://github.com/ocignis/ocignis-fe):
 
+
+https://user-images.githubusercontent.com/3073826/225337569-9dc165e9-d5e8-4e36-95cd-23ad7facc34b.mp4
+
+
+
 ## Stack:
 
 - [TypeScript v4](https://github.com/microsoft/TypeScript) codebase with [Strict Configuration](https://typescript-eslint.io/docs/linting/configs#strict)
