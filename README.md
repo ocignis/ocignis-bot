@@ -30,6 +30,12 @@ _Easily set up a local development environment with single command!_
 
 Visit [localhost:4000](http://localhost:4000/)
 
+## Running
+
+- Running bot in terminal:
+
+- Running [React App](https://github.com/ocignis/ocignis-fe):
+
 ## Stack:
 
 - [TypeScript v4](https://github.com/microsoft/TypeScript) codebase with [Strict Configuration](https://typescript-eslint.io/docs/linting/configs#strict)
