@@ -43,7 +43,7 @@ Visit [localhost:4000](http://localhost:4000/)
 
 ## Stack:
 
-- [TypeScript v4](https://github.com/microsoft/TypeScript) codebase with [Strict Configuration](https://typescript-eslint.io/docs/linting/configs#strict)
+- [TypeScript v5](https://github.com/microsoft/TypeScript) codebase with [Strict Configuration](https://typescript-eslint.io/docs/linting/configs#strict)
 - [tRPC v10](https://trpc.io/) API for client integration.
 - [Prisma v4](https://www.prisma.io/) ORM
 - Unit and integration tests with [Jest](https://github.com/facebook/jest)
