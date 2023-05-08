@@ -3,15 +3,16 @@
 [![CI][ci-badge]][ci-url]
 [![CI-Deployment][ci-deployment-badge]][ci-deployment-url]
 
-Minimal trading bot with API to easily run, stop or schedule trading strategies.  
+Binance minimal trading bot with API to easily run, stop or schedule trading strategies.  
 Build algorithms in Typescript with focus on best practices and painless developer experience.
 
 ## Features:
 
 - Minimal setup that can be extended 🔧
 - Spin it up with single command 🌀
+- Can be easily modified to work with any exchange or trading asset (currently setup to Binance)
 - Dockerized - Instantly create multiple bot containers with different strategies parameters ⚡
-- End-To-End type safety with TypeScript (Database <-> Bot <-> API <-> Frontend)
+- Always execute your trading strategies safe - End-To-End type safety with TypeScript (Database <-> Bot <-> API <-> Frontend)
 - tRPC API for seamless [frontend app](https://github.com/ocignis/ocignis-fe) integration
 - Optional Express.js REST API
 - Websocket implementation. Get every single trade in real time.
