@@ -16,7 +16,8 @@ npm-debug.log*
 database/*
 !database/.gitkeep
 
-envs/*
+envs/*.env
+!envs/*.example.env
 !envs/.gitkeep 
 
 logs/*
