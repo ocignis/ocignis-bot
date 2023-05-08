@@ -12,7 +12,7 @@ Build algorithms in Typescript with focus on best practices and painless develop
 - Spin it up with single command 🌀
 - Can be easily modified to work with any exchange or trading asset (currently setup to Binance)
 - Dockerized - Instantly create multiple bot containers with different strategies parameters ⚡
-- Always execute your trading strategies safe - End-To-End type safety with TypeScript (Database <-> Bot <-> API <-> Frontend)
+- End-To-End type safety with TypeScript (Database <-> Bot <-> API <-> Frontend) - Always execute your trading strategies safe ✅
 - tRPC API for seamless [frontend app](https://github.com/ocignis/ocignis-fe) integration
 - Optional Express.js REST API
 - Websocket implementation. Get every single trade in real time.
