@@ -46,7 +46,7 @@ export class BotBacktest implements BotBacktestCommands {
         });
 
         const firstItemsInTradesArray = trades.slice(0, PREFETCH_TRADES);
-        const strategy_SMA = new Strategy_SMA({
+        const strategy = new Strategy_SMA({
           strategyConfig,
           balance_BUSD: backtestConfig.balance_BUSD,
           trades: firstItemsInTradesArray,
@@ -56,7 +56,7 @@ export class BotBacktest implements BotBacktestCommands {
 
         this._botBacktestFsm = {
           status: 'initialized',
-          strategy: strategy_SMA,
+          strategy,
           tradesDataset: trades.slice(PREFETCH_TRADES),
         };
         return;
@@ -70,7 +70,7 @@ export class BotBacktest implements BotBacktestCommands {
         });
 
         const firstItemsInTradesArray = trades.slice(0, PREFETCH_TRADES);
-        const strategy_SMA = new Strategy_CustomStrategy({
+        const strategy = new Strategy_CustomStrategy({
           strategyConfig,
           balance_BUSD: backtestConfig.balance_BUSD,
           trades: firstItemsInTradesArray,
@@ -81,7 +81,7 @@ export class BotBacktest implements BotBacktestCommands {
 
         this._botBacktestFsm = {
           status: 'initialized',
-          strategy: strategy_SMA,
+          strategy,
           tradesDataset: trades.slice(PREFETCH_TRADES),
         };
 

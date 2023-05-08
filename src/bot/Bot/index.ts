@@ -1,5 +1,5 @@
 import { Position } from 'bot/common/types';
-import { Strategy_SMA } from 'bot/strategies';
+import { Strategy_CustomStrategy, Strategy_SMA } from 'bot/strategies';
 
 import { getInitStrategyParameters } from './getInitStrategyParameters';
 import { handleExchangeDataUpdate } from './handleExchangeDataUpdate';
@@ -39,7 +39,7 @@ export class Bot implements BotCommands {
     const { strategyName, strategyConfig, strategySpecificConfig } = this._botConfig;
 
     switch (strategyName) {
-      case 'SMA':
+      case 'SMA': {
         const { balance_BUSD, trades, position } = await getInitStrategyParameters({
           symbolPair: strategyConfig.symbolPair,
         });
@@ -55,9 +55,26 @@ export class Bot implements BotCommands {
         });
         this._botFsm = { status: 'initialized', strategy: strategy_SMA };
         return;
+      }
 
-      case 'CustomStrategy':
+      case 'CustomStrategy': {
+        const { balance_BUSD, trades, position } = await getInitStrategyParameters({
+          symbolPair: strategyConfig.symbolPair,
+        });
+
+        this._position = position;
+
+        const strategy_Custom = new Strategy_CustomStrategy({
+          strategyConfig,
+          balance_BUSD,
+          trades,
+          periodShort: strategySpecificConfig.periodShort,
+          periodLong: strategySpecificConfig.periodShort,
+          customStrategyParam: 'test_custom_strategy',
+        });
+        this._botFsm = { status: 'initialized', strategy: strategy_Custom };
         return;
+      }
 
       default:
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
