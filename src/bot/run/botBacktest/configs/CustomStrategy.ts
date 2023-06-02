@@ -10,8 +10,8 @@ export const CustomStrategy_01 = BotBacktestConfigSchema.parse({
   },
   strategySpecificConfig: {
     customStrategyParam: 'my-custom-param',
-    periodShort: 3,
-    periodLong: 8,
+    periodShort: 20,
+    periodLong: 50,
   },
   backtestConfig: {
     balance_BUSD: 10000,
