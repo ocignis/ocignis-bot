@@ -24,7 +24,9 @@ export const searchSignalPositionOpen = ({
   periodLong,
   customStrategyParam,
 }: SearchSignalPositionOpenParams): SearchSignalPositionOpenReturn => {
-  console.log('customStrategyParam: ', customStrategyParam);
+  if (customStrategyParam == 'test') {
+    console.log('Log test signal.');
+  }
 
   const buyAmount_BUSD = balance_BUSD * (entryAmountRelative / 100);
 
