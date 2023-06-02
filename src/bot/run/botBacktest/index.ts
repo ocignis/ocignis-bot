@@ -12,7 +12,7 @@ const runBotBacktest = async () => {
     await botBacktest.initialize();
     const backtestInfo = botBacktest.start();
 
-    console.log('🔎 Log ~ backtestInfo.stats', backtestInfo.stats);
+    console.log('🔎 Log ~ backtest stats: ', backtestInfo.stats);
 
     return backtestInfo;
   } catch (error) {

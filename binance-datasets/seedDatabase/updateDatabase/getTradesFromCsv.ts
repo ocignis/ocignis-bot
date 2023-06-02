@@ -27,7 +27,7 @@ export const getTradesFromCsv = async ({ csvFilePath }: GetTradesFromCsvParams):
   const tradeRowsCsv = reader.pipe(parse({ headers: false })) as unknown as TradeRowsCsv;
   // .on('error', (error) => console.error(error))
   // .on('data', (tradeRowCsv: TradeRowCsv) => {
-  //   console.log('🔎 Log ~ tradeRowCsv', tradeRowCsv);
+  //   console.log('Log ~ tradeRowCsv', tradeRowCsv);
   // })
   // .on('end', (rowCount: number) => console.log(`Parsed ${rowCount} rows`)) as unknown as TradeRowsCsv;
 
