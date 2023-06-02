@@ -14,8 +14,8 @@ export const SMA_01 = BotBacktestConfigSchema.parse({
   },
   backtestConfig: {
     balance_BUSD: 3000,
-    startTime: new Date('2022-01-01T00:00:00.000Z'),
-    endTime: new Date('2022-01-05T00:00:00.000Z'),
+    startTime: new Date('2023-04-01T00:00:00.000Z'),
+    endTime: new Date('2023-04-02T00:00:00.000Z'),
     fee: FEE_RATE_TRADING.noFee,
   },
 } satisfies BotBacktestConfig);
@@ -33,8 +33,8 @@ export const SMA_02 = BotBacktestConfigSchema.parse({
   },
   backtestConfig: {
     balance_BUSD: 3000,
-    startTime: new Date('2022-11-20T00:00:00.000Z'),
-    endTime: new Date('2022-11-22T00:00:00.000Z'),
+    startTime: new Date('2023-04-01T00:00:00.000Z'),
+    endTime: new Date('2023-04-02T00:00:00.000Z'),
     fee: FEE_RATE_TRADING.noFee,
   },
 } satisfies BotBacktestConfig);
@@ -52,8 +52,8 @@ export const SMA_03 = BotBacktestConfigSchema.parse({
   },
   backtestConfig: {
     balance_BUSD: 3000,
-    startTime: new Date('2022-08-20T00:00:00.000Z'),
-    endTime: new Date('2022-11-22T00:00:00.000Z'),
+    startTime: new Date('2023-04-01T00:00:00.000Z'),
+    endTime: new Date('2023-04-02T00:00:00.000Z'),
     fee: FEE_RATE_TRADING.noFee,
   },
 } satisfies BotBacktestConfig);

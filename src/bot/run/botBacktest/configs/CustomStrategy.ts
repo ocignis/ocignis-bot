@@ -15,8 +15,8 @@ export const CustomStrategy_01 = BotBacktestConfigSchema.parse({
   },
   backtestConfig: {
     balance_BUSD: 10000,
-    startTime: new Date('2022-12-01T00:00:00.000Z'),
-    endTime: new Date('2022-12-10T00:00:00.000Z'),
+    startTime: new Date('2023-04-01T00:00:00.000Z'),
+    endTime: new Date('2023-04-02T00:00:00.000Z'),
     fee: FEE_RATE_TRADING.spotTrading_Market * 0,
   },
 } satisfies BotBacktestConfig);
