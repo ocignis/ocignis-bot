@@ -27,6 +27,3 @@ logs/*
 
 binance-datasets/datasets/spot-monthly-trades/*
 !binance-datasets/datasets/spot-monthly-trades/.gitkeep
-
-binance-datasets/datasets/_temp-files-trades/*
-!binance-datasets/datasets/_temp-files-trades/.gitkeep
