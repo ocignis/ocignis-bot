@@ -33,7 +33,7 @@ _Easily set up a local development environment with single command!_
 
 - clone the repo
 - rename [file to _dev.env_](https://github.com/ocignis/ocignis-bot/blob/main/envs/dev.example.env) and set env vars(create [Binance API keys](https://www.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072))
-- `npm run dev` and apply database migrations `npm run db-migration-generate` 🚀
+- `npm run dev` 🚀 _(apply database migrations if needed `npm run db-migration-generate`)_
 
 Visit:
 
