@@ -35,21 +35,23 @@ _Easily set up a local development environment with single command!_
 - rename [file to _dev.env_](https://github.com/ocignis/ocignis-bot/blob/main/envs/dev.example.env) and set env vars(create [Binance API keys](https://www.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072))
 - `npm run dev` 🚀 _(apply database migrations if needed `npm run db-migration-generate`)_
 
-Visit:
-
-- terminal:
-
-[![](misc/demo.gif)](https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--glare-effect)
-
-- or [React App](https://github.com/ocignis/ocignis-fe):
-
-  https://user-images.githubusercontent.com/3073826/225337569-9dc165e9-d5e8-4e36-95cd-23ad7facc34b.mp4
+Visit [Ocignis React app](https://github.com/ocignis/ocignis-fe) to run, stop or schedule trading strategies.
 
 ### Backtesting:
 
 - download trades from Binance `npm run backtest-download-data`
 - seed database `npm run backtest-seed-database`
 - `npm run backtest-run` 🚀
+
+Run backtest in:
+
+- terminal:
+
+[![](misc/demo.gif)](https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--glare-effect)
+
+- browser [Ocignis React app](https://github.com/ocignis/ocignis-fe):
+
+https://user-images.githubusercontent.com/3073826/225337569-9dc165e9-d5e8-4e36-95cd-23ad7facc34b.mp4
 
 ## Stack:
 
