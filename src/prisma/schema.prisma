@@ -13,14 +13,13 @@ model BotInstance {
   botInstance Json
 }
 
-// Backtest
 model BacktestBotBacktestInstance {
   name                String @unique
   symbolPair          String
   botBacktestInstance Json
 }
 
-// Historical data
+// Historical data - Backtesting
 model BacktestHistoricTrade {
   id         String @id @default(uuid())
   symbolPair String
