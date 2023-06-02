@@ -47,7 +47,7 @@ Run backtest in:
 
 - terminal:
 
-[![](misc/demo.gif)](https://github.com/ocignis/ocignis-bot)
+[![](misc/demo-terminal.gif)](https://github.com/ocignis/ocignis-bot)
 
 - browser [Ocignis React app](https://github.com/ocignis/ocignis-fe):
 
