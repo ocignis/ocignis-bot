@@ -5,9 +5,9 @@ export const DOWNLOAD_SYMBOL_PAIRS: DownloadSymbolPairs = [
     symbolPair: 'AVAXBUSD',
     dataTimeSpans: [
       {
-        year: '2022',
-        months: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
-        // months: ['12'],
+        year: '2023',
+        months: ['04'],
+        // months: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
       },
       // {
       //   year: '2021',

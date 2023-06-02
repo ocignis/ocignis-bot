@@ -5,7 +5,7 @@ type DownloadSymbolPair_AVAXBUSD = {
   dataTimeSpans: ReadonlyArray<
     | {
         year: '2023';
-        months: ReadonlyArray<'01' | '02'>;
+        months: ReadonlyArray<'01' | '02' | '03' | '04'>;
       }
     | {
         year: '2022';

@@ -6,8 +6,8 @@ import { initRootFolder } from './initRootFolder';
 import { makeTradesDataDownloadInfo } from './makeTradesDataDownloadInfo';
 import { unzipTradesFiles } from './unzipTradesFiles';
 
-const updateBinanceFileData = async () => {
-  logger.notice('### updateBinanceFileData - START ###');
+const downloadData = async () => {
+  logger.notice('### downloadData - START ###');
   const startTime = performance.now();
 
   await initRootFolder();
@@ -40,7 +40,7 @@ const updateBinanceFileData = async () => {
 
   const endTime = performance.now();
   logger.notice(`Timespan - ${calculateTimespan({ startTime, endTime })}`);
-  logger.notice('### updateBinanceFileData - END ###');
+  logger.notice('### downloadData - END ###');
 };
 
-void updateBinanceFileData();
+void downloadData();
