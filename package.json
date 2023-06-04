@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@prisma/client": "4.15.0",
-    "@trpc/server": "10.28.2",
+    "@trpc/server": "10.29.1",
     "binance": "2.8.0",
     "cors": "2.8.5",
     "date-fns": "2.30.0",
@@ -67,7 +67,7 @@
     "adm-zip": "0.5.10",
     "commitizen": "4.3.0",
     "env-cmd": "10.1.0",
-    "eslint": "8.41.0",
+    "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-typescript": "3.5.5",
     "eslint-plugin-import": "2.27.5",
