@@ -45,11 +45,11 @@ Run [Ocignis React app](https://github.com/ocignis/ocignis-fe) to start, stop or
 
 Run backtest in:
 
-- terminal:
+- terminal `npm run backtest-run`:
 
 [![](misc/demo-terminal.gif)](https://github.com/ocignis/ocignis-bot)
 
-- browser [Ocignis React app](https://github.com/ocignis/ocignis-fe):
+- or run [Ocignis React app](https://github.com/ocignis/ocignis-fe) in browser:
 
 https://user-images.githubusercontent.com/3073826/225337569-9dc165e9-d5e8-4e36-95cd-23ad7facc34b.mp4
 
