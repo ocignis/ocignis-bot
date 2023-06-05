@@ -4,7 +4,7 @@ import { SymbolCoin } from './SymbolCoin';
 
 export const SYMBOL_PAIRS = [
   // Available also on paper testing - Start
-  'BTCBUSD',
+  // 'BTCBUSD',
   // 'ETHBUSD',
   // Available also on paper testing - End
   // 'SOLBUSD',
