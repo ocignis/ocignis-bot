@@ -35,7 +35,7 @@ _Easily set up a local development environment with single command!_
 - rename [file to _dev.env_](https://github.com/ocignis/ocignis-bot/blob/main/envs/dev.example.env) and set env vars(create [Binance API keys](https://www.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072))
 - `npm run dev` 🚀 _(apply database migrations if needed `npm run db-migration-generate`)_
 
-Run [Ocignis React app](https://github.com/ocignis/ocignis-fe) to run, stop or schedule trading strategies.
+Run [Ocignis React app](https://github.com/ocignis/ocignis-fe) to start, stop or schedule trading strategies.
 
 ### Backtesting:
 
