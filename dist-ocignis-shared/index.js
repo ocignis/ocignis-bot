@@ -57,7 +57,7 @@ var KLINE_INTERVALS = [
 // src/bot/common/types/SymbolPair.ts
 var SYMBOL_PAIRS = [
   // Available also on paper testing - Start
-  'BTCBUSD',
+  // 'BTCBUSD',
   // 'ETHBUSD',
   // Available also on paper testing - End
   // 'SOLBUSD',
