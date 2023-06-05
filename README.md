@@ -39,7 +39,7 @@ Visit [Ocignis React app](https://github.com/ocignis/ocignis-fe) to run, stop or
 
 ### Backtesting:
 
-- download trades from Binance `npm run backtest-download-data`
+- download market data (trades, klines, aggregates etc.) [from Binance](https://data.binance.vision/) `npm run backtest-download-data`
 - seed database `npm run backtest-seed-database`
 - `npm run backtest-run` 🚀
 
