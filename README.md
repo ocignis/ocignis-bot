@@ -67,35 +67,35 @@ https://user-images.githubusercontent.com/3073826/225337569-9dc165e9-d5e8-4e36-9
 
 ## Commands
 
-| Command                           | Description                                                                  |
-| --------------------------------- | ---------------------------------------------------------------------------- |
-| prepare                           | Setup git hooks with Husky (executes on npm install)                         |
-| build-ocignis-shared              | Build and export tRPC types                                                  |
-| dev                               | Start bot and database                                                       |
-| dev-changed-deps                  | Build and start bot image                                                    |
-| build                             | Build bot                                                                    |
-| lint                              | Lint whole repository                                                        |
-| lint-fix                          | Run lint fix                                                                 |
-| lint-staged-husky                 | Run prettier and lint on staged files                                        |
-| tsc                               | Run TypeScript compiler                                                      |
-| test                              | Run tests                                                                    |
-| test-watch                        | Run tests in watch mode                                                      |
-| format-lint                       | Lint formatting with Prettier                                                |
-| format-fix                        | Fix formatting with Prettier                                                 |
-| commit                            | Run Commitizen on staged file                                                |
-| clean                             | Remove installed, generated and cached folders (node_modules, coverage etc.) |
-| update-binance-backtest-file-data | Download and update binance csv data files                                   |
-| update-binance-backtest-database  | Update database for backtesting                                              |
-| bot-backtest                      | Run backtest                                                                 |
-| db-prisma-client-generate         | Generate Prisma client                                                       |
-| db-migration-generate             | Generate migration                                                           |
-| db-migration-run                  | Run migration helper                                                         |
-| db-migration-run-dev              | Run migration localy on dev                                                  |
-| db-migration-run-prod             | Run migration on production                                                  |
-| docker-dev                        | Start bot localy on dev                                                      |
-| docker-prod                       | Start bot in production                                                      |
-| docker-compose-run                | Start bot and database in docker containers                                  |
-| docker-compose-run-changed-deps   | Build bot image and start                                                    |
+| Command                         | Description                                                                  |
+| ------------------------------- | ---------------------------------------------------------------------------- |
+| prepare                         | Setup git hooks with Husky (executes on npm install)                         |
+| build-ocignis-shared            | Build and export tRPC types                                                  |
+| dev                             | Start bot and database                                                       |
+| dev-changed-deps                | Build and start bot image                                                    |
+| build                           | Build bot                                                                    |
+| lint                            | Lint whole repository                                                        |
+| lint-fix                        | Run lint fix                                                                 |
+| lint-staged-husky               | Run prettier and lint on staged files                                        |
+| tsc                             | Run TypeScript compiler                                                      |
+| test                            | Run tests                                                                    |
+| test-watch                      | Run tests in watch mode                                                      |
+| format-lint                     | Lint formatting with Prettier                                                |
+| format-fix                      | Fix formatting with Prettier                                                 |
+| commit                          | Run Commitizen on staged file                                                |
+| clean                           | Remove installed, generated and cached folders (node_modules, coverage etc.) |
+| backtest-download-data          | Download binance csv data files                                              |
+| backtest-seed-database          | Seed database for backtesting                                                |
+| backtest-run                    | Run backtest                                                                 |
+| db-prisma-client-generate       | Generate Prisma client                                                       |
+| db-migration-generate           | Generate migration                                                           |
+| db-migration-run                | Run migration helper                                                         |
+| db-migration-run-dev            | Run migration localy on dev                                                  |
+| db-migration-run-prod           | Run migration on production                                                  |
+| docker-dev                      | Start bot localy on dev                                                      |
+| docker-prod                     | Start bot in production                                                      |
+| docker-compose-run              | Start bot and database in docker containers                                  |
+| docker-compose-run-changed-deps | Build bot image and start                                                    |
 
 <!-- Badges -->
 
