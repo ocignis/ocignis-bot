@@ -75,4 +75,5 @@ const TRADEZAP_CONFIG: TradezapConfig = [
   },
 ];
 
+// eslint-disable-next-line import/no-default-export
 export default TRADEZAP_CONFIG;
