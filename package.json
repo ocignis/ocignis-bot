@@ -19,6 +19,7 @@
     "format-fix": "prettier --config .prettierrc --write --ignore-unknown -l .",
     "commit": "git-cz",
     "clean": "shx rm -rf node_modules coverage dist",
+    "tradezap-run": "tradezap --config binance-datasets/tradezap.config.ts",
     "// Backtest scripts": "",
     "backtest-download-data": "ts-node -r tsconfig-paths/register binance-datasets/downloadData/index.ts",
     "backtest-seed-database": "env-cmd -f envs/dev-seed-backtest.env ts-node -r tsconfig-paths/register binance-datasets/seedDatabase/index.ts",
