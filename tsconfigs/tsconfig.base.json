@@ -21,8 +21,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "typeRoots": ["../src/server/rest-api/common/types", "../node_modules/@types"],
-    "moduleResolution": "node",
-    "module": "commonjs",
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
     "target": "ES2022"
   },
   "exclude": ["../dist", "../node_modules"]
