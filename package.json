@@ -21,7 +21,7 @@
     "clean": "shx rm -rf node_modules coverage dist",
     "tradezap-run": "tradezap --config binance-datasets/tradezap.config.ts",
     "// Backtest scripts": "",
-    "backtest-download-data": "ts-node -r tsconfig-paths/register binance-datasets/downloadData/index.ts",
+    "backtest-download-data": "tradezap --config binance-datasets/tradezap.config.ts",
     "backtest-seed-database": "env-cmd -f envs/dev-seed-backtest.env ts-node -r tsconfig-paths/register binance-datasets/seedDatabase/index.ts",
     "backtest-run": "env-cmd -f envs/dev-seed-backtest.env ts-node -r tsconfig-paths/register ./src/bot/run/botBacktest/index.ts",
     "// DB scripts": "",
